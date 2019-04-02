@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>	
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.demopara {
+  line-height: 2 ;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+    canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+        
+	}
+</style>
+    <style>
+/*    body {
+      display: grid;
+      height: 100vh;
+      margin: 0;
+      place-items: center center;
+    }*/
+    .dot {
+      height: 25px;
+      width: 25px;
+      background-color: #bbb;
+      border-radius: 50%;
+      width: 1em;
+      height: 1em;
+    }
+    #one {
+      top: 500px;
+      left: 500px;
+      position: absolute;
+    }
+    #one:hover:after {
+      content: url(https://pbs.twimg.com/profile_images/992435845750636545/q3CQc_oI_400x400.jpg); /* no need for qoutes */
+      left: 128px; /* change this value to one that suits you */
+      top: 128px; /* change this value to one that suits you */
+      opacity: 0.5;
+    }
+    #two {
+      top: 100px;
+      left: 750px;
+      position: absolute;
+    }
+    #two:hover:after {
+      content: url(https://pbs.twimg.com/profile_images/992435845750636545/q3CQc_oI_400x400.jpg); /* no need for qoutes */
+      left: 128px; /* change this value to one that suits you */
+      top: 128px; /* change this value to one that suits you */
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Empathetic Responses</h1>
+  <p>A <b>exploration</b> by Colin Borins.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="/Bibliography.html">Bibliography</a>
+  
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About This Project</h2>
+    <p class="demopara"> I will be 
+exploring the meaning behind empathetic responses and how they are 
+important to interpreting emotional expressions through 
+micro-expressions.</p>
+      <h2>Translating micro-expressions</h2>
+      <p class="demopara" >
+          Translating micro-expressions into a data set may provide the groundwork for an understanding of empathetic responses through the reactions of emotional functioning. My research will address the percentage of emotional connectivity by tracking emotion with micro-expressions. This is illustrated when a person’s facial expressions are synchronized in both the video and the participant, which shows the overall emotional connectivity between two users.</p>
+       <h2>Understanding Responses </h2>
+      <p class="demopara" > Translating micro-expressions into a means of understanding empathetic responses can be a key construct into emotional functioning. The purpose of this research project is to prove or disprove whether these sciences can be an effective measure to understanding empathetic responses. The concepts explored in my research background and questions set me on the path to achieve my goals set for this project which are to prove or disprove whether t these social-sciences can be an effective means to measure a person's thoughts through emotional and micro-expression analytics. Thus, understanding what empathetic and emotional expressions is a vital concept to my thesis.</p>
+     
+  </div>
+  <div class="main">
+    <h2>Emotional Matching</h2>
+    
+   
+      
+    <h2>Project objectives</h2>
+   
+    <p class="demopara" >The primary goal of my research is to compare and contrast facial markers between users and the subject’s in the video to calculate an overall percentage of emotional connection which will determine the emotional connectivity between them. To achieve this goal, I will explore the collected data and analyze empathetic responses to multimedia viewed from selected YouTube videos.In order to research empathetic and emotional responses, my primary research method will be to collect facial data from downloaded videos recorded from YouTube and my recorded test subjects. This will be done by analyzing the movement of the facial markers of a person’s micro-expressions and emotional responses. This will allow a baseline for the further implementation of my software. I have recorded participants during their multimedia sessions and compared my data against previously existing data. </p> <br>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSzDw25xIgQ-gp5-0mNkjMUMv4Z-L8-SHMSQdqwhzv64kZlzhmtfabogZIyzDXvUYhGTdN-8U0J2bsX/pubhtml?widget=true&amp;headers=false" width="1080" height="300" ></iframe>
+      <h2> The Code That Extracts The Data </h2>
+      <p> To gather the data from the videos to do a compare and contrast i needed to extract the x and y of the persons face that is recorded. This is transfered from each individual frame then compared and contrasted from each video. </p>
+   <iframe frameborder=0 style="min-width: 200px; width: 60%; height: 2000px;" scrolling="no" seamless="seamless" srcdoc='<html><body><style type="text/css">.gist .gist-data { height: 400px; }</style><script src="http://gist-it.appspot.com/https://github.com/colinborins/img/blob/master/finalcode.py"></script></body></html>'></iframe> 
+      
+      <br>
+      <h2>Interactive Graphing</h2>
+    
+   
+    <p class="demopara" >These graph will show my exploration of my code. Video 1 and Video 2 are the control videos and for each video there are users that have watched it. i will show mycollected x and y positions over a selected period of time. You will be able to go over certain areas so examine the compaire and contrast videos. click on the buttons to interact with the charts</p> <br><button onclick="window.location.href='/do1.html'">Video 1 of Do</button>
+<button onclick="window.location.href='/do2.html'">Video 2 of Do</button>
+<button onclick="window.location.href='/phil1.html'">Video 1 of Phil</button> 
+      <button onclick="window.location.href='/phil2.html'">Video 2 of phil</button>
+      
+  <img src="/Chart1.png" alt="Smiley face" height="700" width="fill">
+
+ <br> <br>
+      <center><h2> What is the theory and framework behind this project?</h2></center>
+      
+      <h2>Framework</h2>
+    <br>
+      <h2>The Challange</h2>
+    <p class="demopara">Understanding empathetic responses can be challenging, especially when discussing empathy. The “Appraisal Theory of Empathy and Other Vicarious Emotional Experiences” explores the meaning of empathy and empathic emotions. As explained in the article, empathy is defined as feeling what someone else is feeling. Empathy differs from emotional theory -  it does not have the same characteristics. Emotional theory, stated by Wondra and Ellsworth, is characterized by the presence of compassion. This is explained in the passage, “[t]he essence of empathy, agreed upon by most empathy researchers, is feeling what another person feels because something happens to them, and that is what we mean by empathy in our discussions. This conceptualization of empathy is equivalent to affective resonance or experience sharing in multicomponent models of empathy, but it does not include other processes that some empathy theorists believe contribute to emotion sharing, such as perspective taking, self-regulation, and mind perception” (Wondra and Ellsworth 411).
+The journal, Empathy and Other Vicarious Emotional Experiences empathy, discusses the difference between compassion and empathy; “you can feel sad with someone else who is sad (empathy) and also feel concern (compassion), you can also feel happy with someone who is happy (empathy) and feel no concern because nothing bad has happened. Our use of the term empathy does not require understanding another’s internal states” (Wondra and Ellsworth, 412).Empathy compared to emotion theory and empathetic responses are shown to have different characteristics. Unlike Empathy that doesn't directly address emotions, empathic responses are a combination of empathic and emotional theory. Joshua D. Wondra and Phoebe C. Ellsworth passage explains this, “[t]hese theories address how our own emotions are affected by the emotions of others. They do not address our capacity to feel emotions for others when we are not in the same situation or when we are not members of the same group. Empathy theories do discuss our capacity to feel emotions for others, but they treat empathy as something special and they do not relate empathy to the processes that drive firsthand emotional experiences” (Wondra and Ellsworth 412).
+  
+</p>
+<h2>Critical Information</h2>
+ <p class="demopara">    During my research for my critical background, I also came upon various types of methodologies that have been previously used to evaluate multimedia. These approaches haven’t been successful; “[a]lthough there is a frequently used scale that was developed to measure PSI (A. M. Rubin, Pursue, & Powell, 1985), no measure for identification with media characters has been devised” (Cohen 245). Even though there hasn't been a means to measure these developments, people haven't stopped trying to find methods to solve this problem.  The first method was explored by Maccoby and Wilson in 1957.  In researching identification, they sought to see the responses of participants by measuring the characteristic of “[a]dd[i]tion” to a character. Using the method of quantifying, the participants feeling of similarity though the feeling of being addicted to a character and [fantasizing] the feeling of connection with them. This method ultimately failed due to the lack of strategy used in their research.These theorists did not broaden their spectrum of analysis wide enough to be effective. This is evident in the Passage by Jonathan Cohen,” Maccoby and Wilson were the first of many researchers to test the role of identification as a mediating variable between exposure to film and observational learning.
+We now will look into the theoretical framework defined as identification, fantasizing oneself to be in the place of a character, and they measured identification through an additive scale of liking a character, wanting to be like a character, and feeling similar to a character. Others used a similar strategy (e.g., Eisenstock, 1984; Liebes & Katz,1990). (Cohen,46)”. Maccoby and Wilson’s approach within Character analysis was different than scholars like Newton, Reeves, Miller, and Buck. Their approach consisted of asking their participants whether they identified with a character. However, as interesting as this approach was, it didn't end up working. These researchers did not have a qualifiable method of measuring the answers and no way to gauge or scale their data. It was said that "what exactly was being measured remains ambiguous.” This example can be seen in Cohens paper “[s]ome scholars (e.g., Newton & Buck, 1985; Newton et al., 1986; Reeves & Miller, 1978) sidestepped the problem of operationalizing identification by using a more naturalistic approach and asked respondents to rank the distance they felt between them and television characters. This avoided the need to define the concept being measured and resulted in what seemed to be a subjective measure of affinity” (Cohen 46). “The benefits of this type of medium” written by Brush and Say stating that “[w]e believe that students’ interactions with the DP problem-based unit may have provided them with a new perspective on the usefulness of understanding historical events as a means for making decisions as members of a democratic society. We hypothesize that the realism and increased empathy for historical actors provided through participation in the DP unit may have allowed students to see more relevance for how the past relates to their own lives” (Brush & Say, 9). This provides insight into the understanding of micro-expressions through the scope of multimedia, identification and emotional theory. 
+ This research can be a stepping stone into understanding empathetic responses through multimedia. During my research on understanding character development I have found that the previous research by Brush, Say, Newton, Reeves, Miller, Eisenstock, Liebes and Katz, try and solve the issue of character development between users and actors was unsuccessful. By using the methods of mimicking theory, and by further analyzing a person’s facial movements and comparing them to a person in the video, this may reveal a new approach to solving emotional matching between individuals.
+</p>
+       <br>
+      <h2>Backround research</h2>
+  
+
+    <p class="demopara" >  Can empathic and emotional responses be tracked with physiological tracers in response to multimedia?  Micro-expressions are brief movements of muscles in the face that portray varied emotional expressions. Each micro-expression has its own sequence of muscle movement that reveals an emotional response. A significant portion of this research paper will be dedicated to defining the meaning of empathetic responses. The following article, “An Appraisal Theory of Empathy and Other Vicarious Emotional Experiences” explains that “Empathic emotions are real emotions. They strike us quickly and redirect our attention just as any other emotion does and there is no reason to think that they are different from normal emotion processes” (411). Translating micro-expressions into a means of understanding empathetic responses can be a key construct into emotional analytics. Haggard and Isaacs’s research on ego mechanicalisms is documented in their article on “Micromomentary Facial Expressions”. In one case study of Micro-expressions, Haggard and Isaacs created “Micromomentary facial expressions as indicators of ego mechanisms (Haggard and Isaacs,1)”. Haggard and Isaacs indicate that when facial micro mimicry expressions are present, it reveals a person’s true raw emotions in contrast to one’s verbal expression. </p>
+      <h2> Understanding empathetic responses </h2>
+    <p class="demopara">This research can be a stepping stone into understanding empathetic responses through multimedia. During my research on understanding character development I have found that the previous research by Brush, Say, Newton, Reeves, Miller, Eisenstock, Liebes and Katz, try and solve the issue of character development between users and actors was unsuccessful. By using the methods of mimicking theory, and by further analyzing a person’s facial movements and comparing them to a person in the video, this may reveal a new approach to solving emotional matching between individuals.
+Specifically, a person watching a video, their facial expression will mimic those of an individual a video. The data could reveal what makes a character interesting, compelling, and relatable to the audience. By identifying these emotional responses though micro-expression data, writers could have a deeper understanding as to what makes a character engaging because “[w]hen reading a novel or watching a film or a television program, audience members often become absorbed in the plot and identify with the characters portrayed” (Cohen 1). Micro-expressions and emotional cues play an important part in the concept of social behavior, Beattie, Geoffrey quote in his journal called “Visible Thought: The New Psychology of Body Language”  explains this by saying that “[a]s a psychologist my area of specialization is the bodily communication of the contestants: their body language, their facial expressions including the micro expressions, the silent signals of the eyes, head nods, postural changes and the mirroring of posture, hand movements, interpersonal distance, winks, and eyebrow raising” (Geoffrey 4). </p>
+      <br>
+  <h2>The Importance of Silent Signals</h2>
+    <p class="demopara">The importance of silent signals such as the movement of the eyes, head nods, hand movements, in understanding a person's communication. Geoffrey’s journal opens up new concepts on how we see the world through these expressions; he explains how impactful emotional expressions are and how we create different relationships and bond “[t]he emotions that facial expressions of emotions evoke in others contribute to the bonds between parents and children, romantic partners and group members” (Keltner 390).
+    Another important influencer on micro expressions, emotional expressions and micro-expression mimicking is Susan Scutti. In her article titled, “We Unconsciously Mimic Other People’s Facial Expressions to Feel What They Feel” she states that when a person mimics a facial expression or micro-expression it normally happens unconsciously; “[w]e unconsciously mimic others’ facial expressions to create the same emotion in ourselves” (Scutti 2). Unconsciously mimicking another's reaction has been said to help us respond appropriately to social situations.  Researching these mimicking methods prove to be beneficial to the development of my software and this thesis. These mimicry theories are evident in Scutti’s research on the unconscious mind. He explains how mimicking facial expression is a natural part of human evolution and development.Scutti talks about this specifically in her paper by explaining how we communicate with each other; “[t]alking with a friend, we unthinkingly copy just one small part of their facial expression (the way he lifts his eyebrows, say), and this small motion activates an entire emotion system located in the motor and somatosensory cortices of our brain, and then feeling what our friend feels” (Scutti 4).These methods show that mimicking empathetic responses play a role in how humans develop.  Another piece of research that highlights the human development process is Jonathan Cohen’s journal, “[e]ven though the importance of identification and vicarious experience to media theory is accepted, the theoretical basis for the study of identification with media characters has been so far largely intuitive. Furthermore, the study of identification within media studies has focused on” (Cohen 249). Scotti’s and Cohen’s research shows that there is a huge correlation between behaviors, social-upbringing micro-expressions, and media theory. Cohen's and Scotti’s research proves that the identification of micro and emotional expressions responses is an indicator of a person's responses to characters seen in multimedia; they unconsciously mimick their reactions, showing signs of wanting to connect with a character. Using these methods discussed above, creates a path of understanding whether or not it is possible to use empathic and emotional responses with physiological tracers to track emotional connectivity in multimedia.</p>
+      
+      
+      
+
+      
+  </div>
+</div>
+
+ 
+
+</body>
+</html>

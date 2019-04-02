@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>	
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+    canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+        
+	}
+</style>
+    <style>
+/*    body {
+      display: grid;
+      height: 100vh;
+      margin: 0;
+      place-items: center center;
+    }*/
+    .dot {
+      height: 25px;
+      width: 25px;
+      background-color: #bbb;
+      border-radius: 50%;
+      width: 1em;
+      height: 1em;
+    }
+    #one {
+      top: 500px;
+      left: 500px;
+      position: absolute;
+    }
+    #one:hover:after {
+      content: url(https://pbs.twimg.com/profile_images/992435845750636545/q3CQc_oI_400x400.jpg); /* no need for qoutes */
+      left: 128px; /* change this value to one that suits you */
+      top: 128px; /* change this value to one that suits you */
+      opacity: 0.5;
+    }
+    #two {
+      top: 100px;
+      left: 750px;
+      position: absolute;
+    }
+    #two:hover:after {
+      content: url(https://pbs.twimg.com/profile_images/992435845750636545/q3CQc_oI_400x400.jpg); /* no need for qoutes */
+      left: 128px; /* change this value to one that suits you */
+      top: 128px; /* change this value to one that suits you */
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Empathetic Responses</h1>
+  <p>A <b>exploration</b> by Colin Borins.</p>
+</div>
+
+<div class="navbar">
+  <a href="/index.html" class="active">Home</a>
+  <a href="/Bibliography.html">Bibliography</a>
+</div>
+
+
+  <div class="main">
+    <h2>Bibliography</h2>
+   
+<div1 style="font-size: 20px">
+    
+<p1>Adolphs, Ralph. "Recognizing emotion from facial expressions: psychological and neurological mechanisms." Behavioral and cognitive neuroscience reviews 1.1 (2002): 21-62.&nbsp;</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+    
+<p1> Angelelli, Claudia V., and Brian James Baer, eds. Researching translation and interpreting. Routledge, 2015.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Beattie, Geoffrey. Visible thought: The new psychology of body language. Routledge, 2004:1-120.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Bollmer, Grant. "Empathy machines." Media International Australia 165.1 (2017): 63-76.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Borza, Diana, et al. "High-speed video system for micro-expression detection and recognition." Sensors 17.12 (2017): 2913.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Brush, Thomas, and John Say. "The effects of multimedia-supported problem-based inquiry on student engagement, empathy, and assumptions about history." Interdisciplinary Journal of Problem-Based Learning 2.1 (2008): 4.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+ <p1>Clark, Tedra F., Piotr Winkielman, and Daniel N. McIntosh. "Autism and the extraction of emotion from briefly presented facial expressions: stumbling at the first step of empathy." Emotion 8.6 (2008): 803-806</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>“Cognitive-Affective Regulation Process for Micro-Expressions Based on Gaussian Cloud Distribution.” CAAI Transactions on Intelligence Technology, No Longer Published by Elsevier, 22 Dec. 2016,</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Cohen, Jonathan. "Defining identification: A theoretical look at the identification of audiences with media characters." Mass communication &amp; society 4.3 (2001): 245-264.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Englis, Basil G., Katherine B. Vaughan, and John T. Lanzetta. "Conditioning of counter-empathetic emotional responses." Journal of Experimental Social Psychology 18.4 (1982): 375-391.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Freitas-Magalhães, A. Facial expression of emotion: from theory to application. Leya, 2013.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Haggard, Ernest A., and Kenneth S. Isaacs. "Micromomentary facial expressions as indicators of ego mechanisms in psychotherapy." Methods of research in psychotherapy. Springer, Boston, MA, 1966. 154-165.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Polikovsky, S., et al. “Facial Micro-Expressions Recognition Using High Speed Camera and 3D-Gradient Descriptor.” 3rd International Conference on Imaging for Crime Detection and Prevention (ICDP 2009), 2009, doi:10.1049/ic.2009.0244.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Wai, Michael, and Niko Tiliopoulos. "The affective and cognitive empathic nature of thedark triad of personality." Personality and Individual Differences 52.7 (2012): 794-799.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Wondra, Joshua D., and Phoebe C. Ellsworth. "An appraisal theory of empathy and other vicarious emotional experiences." Psychological Review 122.3 (2015): 411-428.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Yan, Wen-Jing, et al. "CASME II: An improved spontaneous micro-expression database and the baseline evaluation." PloS one 9.1 (2014): e86041.</p1>
+<p data-brackets-id="106889" class="slideCaptionContent">                        </p>
+<p1>Yang, Xiujun, et al. "Cognitive-affective regulation process for micro-expressions based on Gaussian cloud distribution." CAAI Transactions on Intelligence Technology 2.1 (2017): 56-61.</p1></div1>
+</div>
+
+ 
+
+</body>
+</html>
